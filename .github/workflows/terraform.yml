@@ -1,0 +1,9 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  runs-on: ubuntu-latest
+  - name: checkout
+    uses: actions/checkout@v3
+  
