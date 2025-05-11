@@ -13,6 +13,11 @@ jobs:
     - name: terraform validate
       run: | 
         terraform --version
+    - name: terraform init
+      run: | 
+        cd ${{ github.workspace }}/learn-terraform-aws-instance/local_state/
+        terraform init
+        
           
       
   
