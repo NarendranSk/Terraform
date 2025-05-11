@@ -17,6 +17,7 @@ jobs:
       run: | 
         cd ${{ github.workspace }}/learn-terraform-aws-instance/local_state/
         terraform init
+        terraform plan
         
           
       
